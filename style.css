@@ -97,19 +97,20 @@ p{
     font-family: 'general-sans', sans-serif;
     font-weight: 100;
     font-size: 16px;
+    margin: 0;
 }
 
 p span{
     text-align:left;
     font-family:'general-sans', sans-serif;
     font-size: 10px;
-    color:rgb(32, 32, 32);
+    color:blue
 }
 
 a{
     font-family:'general-sans', sans-serif;
     text-decoration: none;
-    color:rgb(31, 31, 31);
+    color: blue;
 }
 
 .alert{
@@ -144,6 +145,12 @@ img{
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 10px;
+}
+
+.grid-apropos img{
+    display: grid;
+    padding-left: 10px;
+    align-items: baseline;
 }
 
 
@@ -291,7 +298,6 @@ footer{
         right: 0;
     }
 }
-
 
 @font-face{
     font-family: 'general-sans';
