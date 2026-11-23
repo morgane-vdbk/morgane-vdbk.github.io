@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet-Reliure</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <div>
+            <a class="nom" href="index.html">Morgane Vandembulcke</a>
+        </div>
+        <nav>
+            <a class="button" href="about.html">about</a>
+            <a class="button" href="contact.html">contact</a>
+        </nav>
+    </header>
+
+    <div class="grid-resume">
+        <h2>Papilloner</h2>
+        <h2><span>Reliure/Édition</span></h2>
+    </div>
+    <div class="grid-resume">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolores non earum expedita tempora accusamus atque autem iste dolorum architecto nihil quis deserunt vero impedit quam et aliquam adipisci magnam?</p>
+    </div>
+
+    <div class="galerie" id="galerie">
+        <img src="img/reliure/image1.jpeg" alt="">
+        <img src="img/reliure/image2.jpeg" alt="">
+        <img src="img/reliure/image3.jpeg" alt="">
+        <img src="img/reliure/image4.jpeg" alt="">
+        <img src="img/reliure/image5.jpeg" alt="">
+        <img src="img/reliure/image6.jpg" alt="">
+    </div>
+
+    <div class="lightbox" id="lightbox">
+         <button class="fermer" id="fermer" aria-label="Fermer">
+            &times;
+        </button>
+
+        <button class="precedent" id="precedent" aria-label="Photo précédente">
+            &#10094;
+        </button>
+
+        <img id="photoAgrandie" src="" alt="">
+
+        <button class="suivant" id="suivant" aria-label="Photo suivante">
+            &#10095;
+        </button>
+
+        <div class="compteur" id="compteur"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

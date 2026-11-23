@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet-Sauce Tabasco</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <div>
+            <a class="nom" href="index.html">Morgane Vandembulcke</a>
+        </div>
+        <nav>
+            <a class="button" href="about.html">about</a>
+            <a class="button" href="contact.html">contact</a>
+        </nav>
+    </header>
+    <div class="grid-resume">
+        <h2>Sauce Tabasco</h2>
+        <h2><span>Identité de marque</span></h2>
+    </div>
+    <div class="grid-resume">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolores non earum expedita tempora accusamus atque autem iste dolorum architecto nihil quis deserunt vero impedit quam et aliquam adipisci magnam?</p>
+    </div>
+    <div class="galerie" id="galerie">
+        <img src="img/sauce/Image1.jpg" alt="">
+        <img src="img/sauce/image6.jpg" alt="">
+        <img src="img/sauce/image4.jpg" alt="">
+    </div>
+
+    <div class="lightbox" id="lightbox">
+         <button class="fermer" id="fermer" aria-label="Fermer">
+            &times;
+        </button>
+
+        <button class="precedent" id="precedent" aria-label="Photo précédente">
+            &#10094;
+        </button>
+
+        <img id="photoAgrandie" src="" alt="">
+
+        <button class="suivant" id="suivant" aria-label="Photo suivante">
+            &#10095;
+        </button>
+
+        <div class="compteur" id="compteur"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

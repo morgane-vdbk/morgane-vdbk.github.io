@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet-ODS</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <div>
+            <a class="nom" href="index.html">Morgane Vandembulcke</a>
+        </div>
+        <nav>
+            <a class="button" href="about.html">about</a>
+            <a class="button" href="contact.html">contact</a>
+        </nav>
+    </header>
+    <div class="grid-resume">
+        <h2>Olivier De Scène (ODS)</h2>
+        <h2><span>Association musique, ENSAAMA</span></h2>
+    </div>
+    <div class="grid-resume">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolores non earum expedita tempora accusamus atque autem iste dolorum architecto nihil quis deserunt vero impedit quam et aliquam adipisci magnam?</p>
+    </div>
+    <div class="galerie" id="galerie">
+        <img src="img/ods/image3.jpg" alt="">
+        <img src="img/ods/image1.jpg" alt="">
+        <img src="img/ods/image2.jpg" alt="">
+        <img src="img/ods/image4.jpg" alt="">
+    </div>
+
+    <div class="lightbox" id="lightbox">
+         <button class="fermer" id="fermer" aria-label="Fermer">
+            &times;
+        </button>
+
+        <button class="precedent" id="precedent" aria-label="Photo précédente">
+            &#10094;
+        </button>
+
+        <img id="photoAgrandie" src="" alt="">
+
+        <button class="suivant" id="suivant" aria-label="Photo suivante">
+            &#10095;
+        </button>
+
+        <div class="compteur" id="compteur"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
