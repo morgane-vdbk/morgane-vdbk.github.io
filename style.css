@@ -1,9 +1,8 @@
 body{
-    background: rgb(231, 231, 231);
+    background: #eeeeee;
     color:rgb(31, 31, 31);
     font-family: 'general-sans', sans-serif;
     font-weight: 100;
-    font-size: 10px;
     max-width:1200px;
     margin:0 auto;
 }
@@ -12,7 +11,7 @@ header{
     display: flex;
     grid-template-columns: auto;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     border-bottom: 1px solid rgb(31, 31, 31);
     padding-bottom: 20px;
     margin: 20px;
@@ -50,10 +49,11 @@ nav{
 
 @media (min-width: 498px){
     header{
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
-        padding: 10px;
-        margin: 0;
+        padding: 0px;
+        margin: 10px;
+        height: 100px;
     }
     .nav{
         justify-content: flex-end;
@@ -66,7 +66,16 @@ nav{
         font-size: 16px;
     }
     p{
-        font-size: 12px;
+        font-size: 16px;
+    }
+    a{
+        font-size: 16px;
+    }
+    .grid-contact{
+        font-size: 16px
+    }
+    .grid-apropos h2{
+        font-size: 25px;
     }
 }
 
@@ -75,7 +84,7 @@ h2{
     font-family:'CirrusCumulus';
     font-size: 25px;
     font-weight: 300;
-    color:rgb(31, 31, 31);
+    color:blue;
 }
 
 h2 span{
@@ -84,45 +93,56 @@ h2 span{
     font-style: italic;
     font-size: 16px;
     font-weight: 300;
-    color:rgb(31, 31, 31);
+    color: rgb(31, 31, 31);
 }
 
 .nom{
+    align-items: center;
     text-align: left;
     font-family:'general-sans', sans-serif;
+    font-weight: lighter;
     color: rgb(31, 31, 31);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .nom:hover{
+    text-align: left;
     font-style: italic;
     color: blue;
     transition: all 0.3s ease;
 }
 
+.nom p{
+    font-size: 25px;
+}
+
 @media (min-width: 498px){
     .nom{
-        font-size: 50px;
+        font-size: 25px;
     }
+    .grid-apropos a{
+        font-size: 16px;
+    }   
 }
 
 p{
     text-align: left;
     font-family: 'general-sans', sans-serif;
     font-weight: 100;
-    font-size: 10px;
+    font-size: 16px;
     margin: 0;
 }
 
 p span{
     text-align:left;
     font-family:'general-sans', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     color:blue
 }
 
 a{
     font-family:'general-sans', sans-serif;
+    font-size: 16px;
     text-decoration: none;
     color: blue;
 }
@@ -131,22 +151,25 @@ a{
     text-align: left;
     font-family: 'general-sans', sans-serif;
     font-weight: 300;
-    font-size: 12px;
     color: blue;
+}
+
+.contact p{
+    font-size: 12px;
 }
 
 .grid-contact{
     display: flex;
     grid-template-columns: 1fr;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 12px;
     margin-left: 20px;
 }
 
 .alert{
     text-align:left;
     font-family:'general-sans', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     color:rgb(0, 89, 255);
 }
 
@@ -154,6 +177,19 @@ img{
     width:100%;
     height: auto;
     display:block;
+}
+
+.logo{
+    width: 40px;
+    height:40px;
+    align-items: center;
+}
+
+@media (min-width: 498px){
+    .logo{
+        width: 65px;
+        height:65px;
+    }
 }
 
 .grid{
@@ -191,19 +227,43 @@ img{
     align-items: baseline;
 }
 
+.grid-apropos h2{
+    font-size: 30;
+}
+
+.grid-apropos p{
+    font-size: 12px;
+}
+
 @media (min-width: 498px){
     .grid{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
         padding: 10px;
     }
+
     .grid-resume{
         grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 30px;
     }
+
     .grid-apropos{
         grid-template-columns: 1fr 1fr;
         justify-content: space-between;
     }
+
+    .grid-apropos p{
+        font-size: 16px;
+    }
+
+    .grid-apropos a{
+        font-size: 16px
+    }
+
+    .grid-apropos h2{
+    font-size: 20;
+    }
+
     .grid-titrage{
         grid-template-columns: 1fr;
     }
@@ -218,7 +278,7 @@ img{
     padding: 4px 14px;
     border-radius: 20px;
     transition: all 0.3s ease;
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 20px;
 }
 
@@ -232,7 +292,7 @@ img{
     .button{
         padding: 10px 20px;
         border-radius: 30px;
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
@@ -259,6 +319,12 @@ img{
 
 .item-grid:hover h2{
     opacity:1;
+}
+
+@media (min-width: 498px){
+    .item-grid{
+        padding: 0px;
+    }
 }
 
 footer{
@@ -368,11 +434,13 @@ footer{
 
 @font-face{
     font-family: 'general-sans';
-    src: url('fonts/GeneralSans/Fonts/WEB/fonts/GeneralSans-Light.woff') format('truetype');
+    font-weight: light;
+    src: url('fonts/GeneralSans/fonts/GeneralSans-Light.woff2') format('truetype');
 }
 @font-face{
     font-family: 'general-sans';
-    src: url('fonts/GeneralSans/Fonts/WEB/fonts/GeneralSans-LightItalic.woff') format('truetype');
+    font-weight: italic;
+    src: url('fonts/GeneralSans/fonts/GeneralSans-LightItalic.woff2') format('truetype');
 }
 
 @font-face{
