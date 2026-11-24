@@ -70,7 +70,7 @@ h2 span{
     text-align:left;
     font-family:'general-sans', sans-serif;
     font-style: italic;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
     color:rgb(31, 31, 31);;
 }
@@ -207,7 +207,7 @@ img{
     padding: 8px 18px;
     border-radius: 30px;
     transition: all 0.3s ease;
-    font-size: 10px;
+    font-size: 12px;
     margin: 20px;
 }
 
@@ -221,7 +221,7 @@ img{
     .button{
         padding: 10px 20px;
         border-radius: 30px;
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
